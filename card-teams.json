@@ -1,0 +1,36 @@
+{
+    "@type": "MessageCard",
+    "@context": "http://schema.org/extensions",
+    "themeColor": "0076D7",
+    "summary": "My Technical Support : Alerts",
+    "sections": [{
+        "activityTitle": "My Technical Support :: Alerts",
+        "activitySubtitle": "",
+        "activityImage": "https://media1.giphy.com/media/UqUHuT6y9mK5HfsYFm/giphy.gif?cid=6c09b952tkrxotzrn6ptxivw44i5ke6qp411ja7vu7daejmw&rid=giphy.gif",
+        "facts": [{
+            "name": "Hostname",
+            "value": "{{ hostnameVAR }}"
+        }, {
+            "name": "Description",
+            "value": "{{ DescriptionVAR }}"
+        }, {
+            "name": "Status",
+            "value": "{{ StatusVAR }}"
+        }, {
+	        "name": "Last Change",
+            "value": "{{ LastChangeVAR }}"
+        }, {
+            "name": "When Happened?",
+            "value": "{{ HappenedVAR }}"
+        }],
+        "markdown": true
+    }],
+    "potentialAction": [{
+        "@type": "OpenUri",
+        "name": "Open Event on Zabbix",
+        "targets": [{
+            "os": "default",
+            "uri": "{{ UrlGENERATEDVar }}"
+        }]
+    }]
+}
