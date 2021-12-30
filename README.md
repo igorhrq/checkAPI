@@ -1,6 +1,6 @@
 # checkAPI 
 
-##### - Python 3+
+##### - Python 3.+
 ##### - Requirements libs: requests, jinja2, mysqlclient
 
 You should follow the changes on the lines that are below when u see the comment # CHANGEME --> 
