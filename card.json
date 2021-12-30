@@ -1,0 +1,70 @@
+{
+  "cards": [
+    {
+      "header": {
+       "title": "My Technical Support :: Alerts",
+        "imageUrl": "https://lh3.google.com/u/0/d/1R8HrsWNu55hStDuai-a1z-kmNJBi5eQQ=w512",
+        "imageStyle": "AVATAR"
+      },
+      "sections": [
+        {
+          "widgets": [
+              {
+                "keyValue": {
+                  "topLabel": "Hostname",
+                  "contentMultiline":"true",
+                  "content": "{{ hostnameVAR }}"
+                  }
+              },
+              {
+                "keyValue": {
+                  "topLabel": "Description",
+                  "contentMultiline":"true",
+                  "content": "{{ DescriptionVAR }}"
+                }
+              },
+              {
+                "keyValue": {
+                  "topLabel": "Status",
+                  "contentMultiline":"true",
+                  "content": "{{ StatusVAR }}"
+                }
+              },
+              {
+                "keyValue": {
+                  "topLabel": "Last Change",
+                  "contentMultiline":"true",
+                  "content": "{{ LastChangeVAR }}"
+                }
+              },
+              {
+                "keyValue": {
+                  "topLabel": "When Happened?",
+                  "contentMultiline":"true",
+                  "content": "{{ HappenedVAR }}"
+                }
+              },
+          ]
+        },
+        {
+          "widgets": [
+              {
+                  "buttons": [
+                    {
+                      "textButton": {
+                        "text": "Open Event on Zabbix",
+                        "onClick": {
+                          "openLink": {
+                            "url": "{{ UrlGENERATEDVar }}"
+                          }
+                        }
+                      }
+                    }
+                  ]
+              }
+          ]
+        }
+      ]
+    }
+  ]
+}
